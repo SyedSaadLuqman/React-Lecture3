@@ -3,7 +3,7 @@ import ListGroup from "./ListGroup";
 
 function App() {
   let title = "Phone";
-  let list = ["Shirt", "Honda", "Ferrari", "Mazda"];
+  let list = ["Shirt", "Trouser", "Ferrari", "Mazda"];
 
   return (
     <div className="container">

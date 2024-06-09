@@ -1,16 +1,12 @@
-import { MouseEvent, useState } from "react";
+import { useState } from "react";
 
-interface Props {
-  title: string;
-  items: string[];
-}
-
-export default function ListGroup({ items: list, title }: Props) {
+export default function ListGroup() {
   let [selectedIndex, setSelectedIndex] = useState(-1);
-
+  let title = "Cars";
+  let list = ["Suzkui", "Ferrari", "Honda", "Mazda"];
   return (
     <div>
-      <h1 className="mt-5">My {title} List</h1>
+      <h1 className="mt-5">{title}</h1>
       {list.length == 0 && <p>No Items Found</p>}
       <ul className="list-group mt-4">
         {list.map((item, index) => (
